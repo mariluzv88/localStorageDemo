@@ -1,17 +1,29 @@
-
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 350px;
+}
 .container{
+    height: 500px;
     padding: 50px;
-    border: solid black;
+    border: solid thick rgb(255, 0, 0);
+    border-radius: 15px;
     max-width: 350px;
     text-align: center;
+   
 }
 .fruits{
     list-style: none;
 }
 .fruits li {
-border-bottom: 1px solid purple;
-padding: 10px;
+border-bottom: 2px solid purple;
+width: 250px;
+font-size: 25px;
 display: flex;
+justify-content: space-between;
+align-items: space-between;
+margin-right: 30px;
+
 }
 .fruits label {
     flex: 1;
@@ -19,19 +31,21 @@ display: flex;
 }
 .fruits input {
     display: none;
+   
 }
 .fruits input + label:before{
     content:"🔳 ";
-    margin-right: 10px;
+    
 }
 .fruits input:checked + label:before{
     content: "🍓";
-    margin-right: 10px;
+    /* margin-left: 10px; */
 }
 .add{
     margin-top: 20px;
 }
 .add input {
     outline: 0;
-    border: solid lime;
+    border: solid rgb(0, 255, 153);
+    border-radius: 15px;
 }
